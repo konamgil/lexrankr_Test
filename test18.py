@@ -7,6 +7,8 @@ from time import time
 
 app = Flask(__name__)
 api = Api(app)
+app.config['JSON_AS_ASCII'] = False
+
 lexrank = LexRank()  # can init with various settings
 
 
